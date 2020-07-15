@@ -25,7 +25,8 @@ img {
 body {
   background-color: #fff;
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   color: #000;
 }
@@ -34,7 +35,7 @@ figure figcaption {
   font-size: 14px;
   color: #666;
   margin-right: 270px;
-  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
 }
 
 figure figcaption span {
@@ -42,17 +43,21 @@ figure figcaption span {
   font-size: 13px;
 }
 
-p {
+section > p {
   width: 600px;
   margin: 0 auto;
-  color: #333;
+  color: black;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 10px;
   font-family: font86463;
   font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
+section > p > a {
+  color: #326891;
+}
 
 /* header section */
 
@@ -104,8 +109,6 @@ header ul {
   padding-top: 10px;
 }
 
-
-
 /******************************* main-section ************************* */
 
 .main-section {
@@ -114,14 +117,13 @@ header ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .main-section h1 {
   font-size: 40px;
   width: 600px;
   font-weight: 700;
-  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
   font-style: italic;
   margin-bottom: 20px;
 }
@@ -143,35 +145,78 @@ header ul {
   margin: 0 auto;
 }
 
-
 .paragraph-1 img {
   width: 27px;
   height: 27px;
 }
 
-.paragraph-1 .author-info{
+.paragraph-1 .author-info {
   color: #333;
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: 30px;
-
+  margin-bottom: 10px;
 }
 
-.paragraph-1 .author-info a{
+.paragraph-1 .author-info a {
   color: #333;
 }
 
-.paragraph-1 .paragraph-1-social{
-  border: 1px solid black;
+.paragraph-1 .paragraph-1-social {
+  margin: 15px 0 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.paragraph-1 .paragraph-1-social ul{
-  display: flex
+.paragraph-1-social > div {
+  display: flex;
+}
+.paragraph-1-social p {
+  margin: 0;
 }
 
-.paragraph-1 .paragraph-1-social ul li:not(:first-child){
-  margin-left: 15px;
+.paragraph-1 .paragraph-1-social ul {
+  display: flex;
+}
+
+.paragraph-1 .paragraph-1-social .social-icons li {
+  margin-left: 20px;
+  background-color: #eeeeee;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.paragraph-1 .paragraph-1-social ul:last-child li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.subscribe-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  margin: 25px 0;
+}
+
+.subscribe-text > hr {
+  width: 80px;
+  border: none;
+  border-top: 1px solid #d4d4d4;
+}
+
+.subscribe-text > p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.subscribe-text > a {
+  color: #326891;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
