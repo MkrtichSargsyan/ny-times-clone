@@ -17,7 +17,7 @@ ul {
 }
 
 img {
-  width: 200px;
+  min-width: 200px;
 }
 
 /******************************* global ************************* */
@@ -138,6 +138,12 @@ header ul {
   font-weight: 500;
   letter-spacing: 1.5px;
 }
+
+.paragraph-1-container{
+  display: flex;
+  align-items: center;
+}
+
 .paragraph-1 {
   display: flex;
   flex-direction: row;
@@ -235,21 +241,22 @@ header ul {
 .editor-pick {
   display: flex;
   flex-direction: column;
-  width: 210px;
-  margin-left: 90px;
+  margin-left: 60px;
 }
-.editor-pick > h4 {
+.editor-pick h4 {
   padding-bottom: 10px;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 15px;
 }
 .editor-pick-articles article {
   display: flex;
+  align-items: center;
+  width: 210px;
   margin-bottom: 15px;
 }
 
 .editor-pick-articles article a {
-  margin: auto 0 auto 10px;
+  margin-left: 15px;
   color: #333;
   text-decoration: none;
 }
@@ -259,7 +266,10 @@ header ul {
   height: 75px;
 }
 
-/* paragraph-2 */
+
+
+/******************************* paragraph-2-section ************************* */
+
 .paragraph-2 {
   width: 100%;
   display: flex;
@@ -271,10 +281,31 @@ header ul {
   flex-direction: column;
   width: 950px;
 }
-.paragraph-2-start h2 {
-}
+
 .paragraph-2-start p {
   font-size: 16px;
   color: #666666;
   line-height: 1.2;
 }
+
+.astronomy-container{
+  position: relative;
+}
+
+.astronomy-container .image-articles-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-articles-container div{
+  width: 228px;
+  border: 1px solid red;
+}
+
+.astronomy-container img{
+  width: 100%;
+  z-index: -30;
+  position: absolute;
+}
+
