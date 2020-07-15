@@ -13,7 +13,7 @@ ul {
 }
 
 .container {
-  padding: 0 160px;
+  padding: 0 90px;
 }
 
 img {
@@ -48,8 +48,8 @@ section > p {
   margin: 0 auto;
   color: black;
   font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 10px;
+  line-height: 1.3;
+  margin-bottom: 20px;
   font-family: font86463;
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -57,6 +57,12 @@ section > p {
 
 section > p > a {
   color: #326891;
+}
+
+h2{
+  font-size: 20px;
+  font-family: font86463;
+  color: #333;
 }
 
 /* header section */
@@ -141,9 +147,11 @@ header ul {
 /******************************* paragraph-1-section ************************* */
 
 .paragraph-1 {
-  width: 600px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
 
 .paragraph-1 img {
   width: 27px;
@@ -196,27 +204,54 @@ header ul {
   margin-left: 20px;
 }
 
-.subscribe-text {
+.paragraph-1 .subscribe-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
+  font-size: 15px;
   margin: 25px 0;
 }
 
-.subscribe-text > hr {
-  width: 80px;
+.paragraph-1 .subscribe-text > hr {
+  width: 70px;
   border: none;
   border-top: 1px solid #d4d4d4;
 }
 
-.subscribe-text > p {
+.paragraph-1 .subscribe-text > p {
   margin-top: 20px;
   font-weight: bold;
 }
-.subscribe-text > a {
+.paragraph-1 .subscribe-text > a {
   color: #326891;
   margin-bottom: 20px;
   font-weight: bold;
   text-decoration: none;
+}
+
+
+.paragraph-1 h2{
+  margin: 40px 0 20px;
+  
+}
+
+/* editor-pick */
+
+.paragraph-1 .editor-pick{
+  position: absolute;
+  border: 1px solid red;
+  right: 50px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  float: right;
+}
+
+.paragraph-1 .editor-pick-articles article{
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-1 .editor-pick-articles article img{
+  float: left;
 }
