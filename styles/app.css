@@ -139,7 +139,7 @@ header ul {
   letter-spacing: 1.5px;
 }
 
-.paragraph-1-container{
+.paragraph-1-container {
   display: flex;
   align-items: center;
 }
@@ -266,8 +266,6 @@ header ul {
   height: 75px;
 }
 
-
-
 /******************************* paragraph-2-section ************************* */
 
 .paragraph-2 {
@@ -288,24 +286,87 @@ header ul {
   line-height: 1.2;
 }
 
-.astronomy-container{
+.astronomy-container {
   position: relative;
 }
 
-.astronomy-container .image-articles-container{
+.astronomy-container .image-articles-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.image-articles-container div{
+.image-articles-container div {
   width: 228px;
-  border: 1px solid red;
+  margin-top: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
 }
-
-.astronomy-container img{
+.image-articles-container span {
+  font-weight: bold;
+  font-size: 11px;
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.astronomy-container img {
   width: 100%;
   z-index: -30;
   position: absolute;
 }
+.astronomy-footer {
+  margin: 20px 0;
+}
 
+.astronomy-footer h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.astronomy-footer hr {
+  border: none;
+  border-top: 1px rgb(44, 44, 44) solid;
+  width: 60px;
+  margin-bottom: 15px;
+}
+/* paragraph-3 section */
+
+.paragraph-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph-3 p {
+  width: 600px;
+  margin: 0 auto;
+  color: black;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.paragraph-3 figure {
+  width: 600px;
+  margin: 20px 0;
+}
+.paragraph-3 figure img {
+  width: 100%;
+}
+.paragraph-3 figcaption {
+  width: 100%;
+  font-size: 16px;
+  color: #636363;
+}
+.paragraph-3 figcaption p {
+  font-size: 15px;
+  color: #929292;
+  letter-spacing: 0.8px;
+}
+.paragraph-3 figcaption p span {
+  font-size: 13px;
+  color: #a1a0a0;
+  letter-spacing: 0.8px;
+}
