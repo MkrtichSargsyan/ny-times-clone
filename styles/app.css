@@ -44,6 +44,7 @@ figure figcaption span {
   color: #888;
   font-size: 13px;
 }
+
 p {
   color: black;
   font-size: 20px;
@@ -52,7 +53,8 @@ p {
   font-weight: 500;
   letter-spacing: 1.5px;
 }
-p > a {
+
+p>a {
   color: #326891;
 }
 
@@ -63,6 +65,7 @@ h2 {
 img {
   min-width: 200px;
 }
+
 /* header section */
 
 header {
@@ -155,7 +158,7 @@ button:hover {
 }
 
 /******************************* paragraph-1-section ************************* */
-.paragraph-1 > .paragraph-1-container > div > p {
+.paragraph-1>.paragraph-1-container>div>p {
   width: 600px;
   margin: 0 auto;
   color: black;
@@ -177,11 +180,13 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.paragraph-1 > div {
+
+.paragraph-1>div {
   width: 600px;
   justify-self: center;
   align-self: center;
 }
+
 .paragraph-1 img {
   width: 27px;
   height: 27px;
@@ -205,9 +210,10 @@ button:hover {
   align-items: center;
 }
 
-.paragraph-1-social > div {
+.paragraph-1-social>div {
   display: flex;
 }
+
 .paragraph-1-social p {
   margin: 0;
 }
@@ -226,6 +232,7 @@ button:hover {
   align-items: center;
   border-radius: 50%;
 }
+
 .paragraph-1 .paragraph-1-social ul:last-child li {
   display: flex;
   justify-content: center;
@@ -242,17 +249,18 @@ button:hover {
   margin: 25px 0;
 }
 
-.paragraph-1 .subscribe-text > hr {
+.paragraph-1 .subscribe-text>hr {
   width: 70px;
   border: none;
   border-top: 1px solid #d4d4d4;
 }
 
-.paragraph-1 .subscribe-text > p {
+.paragraph-1 .subscribe-text>p {
   margin-top: 20px;
   font-weight: bold;
 }
-.paragraph-1 .subscribe-text > a {
+
+.paragraph-1 .subscribe-text>a {
   color: #326891;
   margin-bottom: 20px;
   font-weight: bold;
@@ -270,11 +278,13 @@ button:hover {
   flex-direction: column;
   margin-left: 60px;
 }
+
 .editor-pick h4 {
   padding-bottom: 10px;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 15px;
 }
+
 .editor-pick-articles article {
   display: flex;
   align-items: center;
@@ -301,6 +311,7 @@ button:hover {
   justify-content: center;
   margin: 15px 0;
 }
+
 .paragraph-2-container {
   display: flex;
   flex-direction: column;
@@ -330,17 +341,20 @@ button:hover {
   font-size: 13px;
   font-weight: 300;
 }
+
 .image-articles-container span {
   font-weight: bold;
   font-size: 11px;
   margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .astronomy-container img {
   width: 100%;
   z-index: -1;
   position: absolute;
 }
+
 .astronomy-footer {
   margin: 20px 0;
 }
@@ -357,6 +371,7 @@ button:hover {
   width: 60px;
   margin-bottom: 15px;
 }
+
 /* paragraph-3 section */
 
 .paragraph-3 {
@@ -371,6 +386,7 @@ button:hover {
 .paragraph-3 figure {
   margin: 20px 0;
 }
+
 .paragraph-3 figure img {
   width: 100%;
 }
@@ -380,19 +396,23 @@ button:hover {
   color: #929292;
   letter-spacing: 0.8px;
 }
+
 .paragraph-3 .fig-cap-vid p span {
   font-size: 13px;
   color: #a1a0a0;
   letter-spacing: 0.8px;
 }
+
 .paragraph-3 .fig-cap-img {
   width: 100%;
 }
+
 .paragraph-3 .fig-cap-img p {
   font-size: 15px;
   color: #4e4e4e;
   letter-spacing: 0.9px;
 }
+
 .paragraph-3 .fig-cap-img p span {
   color: #929292;
   font-size: 13px;
@@ -414,6 +434,7 @@ button:hover {
   letter-spacing: 0.5px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .vid-article-footer-start ul {
   display: flex;
   margin: 0;
@@ -428,11 +449,30 @@ button:hover {
 .video-article-section-footer .social-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 20px 0;
 }
+
 .video-article-section-footer .social-links ul {
   display: flex;
 }
+
+
+.video-article-section-footer .social-links ul * {
+  background-color: #eeeeee;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.video-article-section-footer .social-links ul *:hover {
+  background-color: white;
+  border: 1px solid #eee;
+}
+
 .video-article-section-footer .social-links button {
   width: 328px;
   height: 24px;
@@ -446,4 +486,37 @@ button:hover {
   border-radius: 4px;
   border: none;
   background-color: #326891;
+}
+
+.video-article-section-footer .social-links ul li:not(:first-child) {
+  margin-left: 10px;
+}
+
+/* ********************************************************************************* */
+/* ***************************--SUGGESTION-SECTION--********************************** */
+/* ********************************************************************************* */
+
+.suggestion-section-container {
+  max-width: 1320px;
+  margin: 20px auto;
+  border: 1px solid red;
+}
+
+.suggestion-section-left {
+  width: 750px;
+  background-color: black;
+  float: left;
+}
+
+.suggestion-section-right {
+  display: inline-block;
+  /* width: 350px; */
+  /* float: right; */
+  margin-left: 20px;
+  background-color: green;
+}
+
+.suggestion-section-right img {
+  width: 20px;
+  height: 2px;
 }
