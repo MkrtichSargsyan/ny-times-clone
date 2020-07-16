@@ -16,9 +16,14 @@ ul {
   padding: 0 90px;
 }
 
-img {
-  min-width: 200px;
+.nav-container{
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 /******************************* global ************************* */
 
@@ -49,6 +54,9 @@ h2 {
   font-size: 20px;
 }
 
+img {
+  min-width: 200px;
+}
 /* header section */
 
 header {
@@ -56,8 +64,6 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  display: flex;
-  align-items: center;
   z-index: 1000;
   border-bottom: #dbdbdb 1px solid;
   margin-bottom: 80px;
@@ -67,8 +73,19 @@ header {
 header ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0 20px;
+  width: 210px;
+}
+
+header .left-nav{
+  justify-content: flex-start;
+}
+
+
+header img{
+  width: 200px;
+  height: 40px;
 }
 
 .left-nav li:not(:last-child) {
@@ -87,6 +104,11 @@ header ul {
   color: white;
   border-radius: 3px;
   font-size: 12px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #466880;
 }
 
 .main-logo {
