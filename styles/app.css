@@ -50,17 +50,22 @@ p {
   letter-spacing: 1.5px;
 }
 
-p > a {
+p>a {
   color: #326891;
 }
 
 h2 {
   font-size: 20px;
+  width: 100%;
+  margin: 15px 0;
 }
 
 img {
   min-width: 200px;
 }
+
+
+
 
 /* header section */
 
@@ -155,7 +160,7 @@ button:hover {
 }
 
 /******************************* paragraph-1-section ************************* */
-.paragraph-1 > .paragraph-1-container > div > p {
+.paragraph-1>.paragraph-1-container>div>p {
   width: 600px;
   margin: 0 auto;
   color: black;
@@ -178,7 +183,7 @@ button:hover {
   justify-content: center;
 }
 
-.paragraph-1 > div {
+.paragraph-1>div {
   width: 600px;
   justify-self: center;
   align-self: center;
@@ -207,7 +212,7 @@ button:hover {
   align-items: center;
 }
 
-.paragraph-1-social > div {
+.paragraph-1-social>div {
   display: flex;
 }
 
@@ -246,18 +251,18 @@ button:hover {
   margin: 25px 0;
 }
 
-.paragraph-1 .subscribe-text > hr {
+.paragraph-1 .subscribe-text>hr {
   width: 70px;
   border: none;
   border-top: 1px solid #d4d4d4;
 }
 
-.paragraph-1 .subscribe-text > p {
+.paragraph-1 .subscribe-text>p {
   margin-top: 20px;
   font-weight: bold;
 }
 
-.paragraph-1 .subscribe-text > a {
+.paragraph-1 .subscribe-text>a {
   color: #326891;
   margin-bottom: 20px;
   font-weight: bold;
@@ -315,6 +320,17 @@ button:hover {
   width: 950px;
 }
 
+.paragraph-2-container hr{
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.paragraph-2-container .author-name{
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
 .paragraph-2-start p {
   font-size: 16px;
   color: #666666;
@@ -323,6 +339,8 @@ button:hover {
 
 .astronomy-container {
   position: relative;
+  padding-bottom: 50px;
+
 }
 
 .astronomy-container .image-articles-container {
@@ -522,6 +540,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .most-popular {
   display: flex;
   flex-direction: column;
@@ -575,19 +594,19 @@ button:hover {
   display: flex;
   flex-direction: column;
   max-width: 1280px;
-  margin: 20px auto;
+  margin: 20px auto 50px;
   padding: 40px;
-}
-.links-start {
 }
 
 .links-start img {
   width: 184px;
 }
+
 .links-start hr {
   border-top: #e2e2e2 2px solid;
   margin-bottom: 1px;
 }
+
 .links-start div {
   border-top: 1px #e2e2e2 solid;
   display: flex;
@@ -595,19 +614,23 @@ button:hover {
   justify-content: space-between;
   margin-top: 3px;
 }
+
 .links-start a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   color: #567b95;
 }
+
 .links-mid {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 10px;
 }
 
-.links-mid > div {
+.links-mid>div {
   flex: 1;
 }
 
@@ -621,19 +644,95 @@ button:hover {
   font-weight: bold;
   font-size: 13px;
 }
+
 .links-mid li a {
   text-decoration: none;
   color: #000;
 }
+
 .links-mid .li-bold {
   font-weight: bolder;
   font-size: 16px;
 }
+
 .links-mid .li-bold svg {
   width: 13px;
   height: 13px;
   margin-right: 5px;
 }
-.links-mid:last-child ul li:nth-child(7) {
-  border-bottom: #e2e2e2 1px solid;
+
+.links .links-mid div:last-child {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 15px;
+}
+
+.links .links-mid div:last-child ul li:nth-child(7) {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.links .links-end ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.links .links-end ul a {
+  text-decoration: none;
+  color: #666;
+  font-size: 11px;
+}
+
+.links .links-end ul a:not(:last-child) {
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------footer------------- */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  border-top: 1px solid black;
+  background-color: #fff;
+  z-index: 1000px;
+}
+
+.footer-container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  font-size: 15px;
+  color: #000;
+  text-align: end;
+}
+
+footer div{
+  flex:1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer button{
+  border: none;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+footer svg{
+  transform: rotate(-90deg);
+  margin-left: 30px;
 }
