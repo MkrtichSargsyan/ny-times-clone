@@ -1,16 +1,20 @@
-/******************************* reset ************************* */
+/******************************* --RESET-- ************************ */
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 ul {
   list-style: none;
 }
+
+/******************************* --GLOBAL-- ************************ */
 
 .nav-container {
   max-width: 1320px;
@@ -20,12 +24,10 @@ ul {
   justify-content: space-between;
 }
 
-/******************************* global ************************* */
-
 body {
   background-color: #fff;
   font-size: 14px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   line-height: 1.4;
   color: #000;
 }
@@ -50,7 +52,7 @@ p {
   letter-spacing: 1.5px;
 }
 
-p > a {
+p a {
   color: #326891;
 }
 
@@ -104,15 +106,26 @@ header img {
   height: 40px;
 }
 
-.left-nav li:not(:last-child) {
-  margin-right: 25px;
-}
-
 .right-nav li {
   margin-left: 7px;
 }
 
-.right-nav button,
+.links-mid li {
+  line-height: 25px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-nav li:not(:last-child) {
+  margin-right: 25px;
+}
+
+footer button {
+  border: none;
+  font-weight: bold;
+  background-color: #fff;
+}
+
 .right-nav button {
   background-color: #567b95;
   padding: 7px 12px;
@@ -129,6 +142,11 @@ button:hover {
 
 .main-logo {
   margin: auto;
+}
+
+footer svg {
+  transform: rotate(-90deg);
+  margin-left: 30px;
 }
 
 .main-logo svg {
@@ -157,13 +175,84 @@ button:hover {
   margin-bottom: 40px;
 }
 
+.paragraph-1 img {
+  width: 27px;
+  height: 27px;
+}
+
+.astronomy-container img {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.suggestion-section-left img {
+  width: 100%;
+}
+
+.links-start img {
+  width: 184px;
+}
+
 .main-section figure img {
   width: 100%;
   margin-bottom: 10px;
 }
 
 /******************************* paragraph-1-section ************************* */
-.paragraph-1 > .paragraph-1-container > div > p {
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  font-size: 15px;
+  color: #000;
+  text-align: end;
+}
+
+.paragraph-1-social p {
+  margin: 0;
+}
+
+.suggestion-grid p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+
+.paragraph-2-start p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.2;
+}
+
+.vid-article-footer-start p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph-1 .subscribe-text > p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.paragraph-3 .fig-cap-vid p {
+  font-size: 15px;
+  color: #929292;
+  letter-spacing: 0.8px;
+}
+
+.paragraph-3 .fig-cap-img p {
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 0.9px;
+}
+
+.paragraph-1 .paragraph-1-container > div > p {
   width: 600px;
   margin: 0 auto;
   color: black;
@@ -178,15 +267,18 @@ button:hover {
   flex-direction: row;
 }
 
+footer div {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .paragraph-1 > div {
   width: 600px;
   justify-self: center;
   align-self: center;
-}
-
-.paragraph-1 img {
-  width: 27px;
-  height: 27px;
 }
 
 .paragraph-1 .author-info {
@@ -196,8 +288,43 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.paragraph-1 .author-info a {
+.suggestion-grid a {
+  text-decoration: none;
+  color: #121212;
+  font-size: 18px;
+}
+
+.links-start a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #567b95;
+}
+
+.most-popular a {
+  padding: 16px 0;
+  border-top: #e0e0e0 1px solid;
+  text-decoration: none;
+  color: #121212;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.links-mid li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.editor-pick-articles article a {
+  margin: auto 0 auto 10px;
   color: #333;
+  text-decoration: none;
+}
+
+.vid-article-footer-start ul li a {
+  font-size: 12px;
+  color: #666;
+  padding: 0 5px;
 }
 
 .paragraph-1 .paragraph-1-social {
@@ -209,13 +336,14 @@ button:hover {
   display: flex;
 }
 
-.paragraph-1-social p {
-  margin: 0;
+.links-mid li:first-child {
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .paragraph-1 .paragraph-1-social .social-icons li {
   margin-left: 20px;
-  background-color: #eeeeee;
+  background-color: #eee;
   width: 27px;
   height: 27px;
   display: flex;
@@ -237,15 +365,31 @@ button:hover {
   margin: 25px 0;
 }
 
-.paragraph-1 .subscribe-text > hr {
+.links-start hr {
+  border-top: #e2e2e2 2px solid;
+  margin-bottom: 1px;
+}
+
+.paragraph-2-container hr {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.astronomy-footer hr {
+  border: none;
+  border-top: 1px rgb(44, 44, 44) solid;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.paragraph-1 .subscribe-text hr {
   width: 70px;
   border: none;
   border-top: 1px solid #d4d4d4;
 }
 
-.paragraph-1 .subscribe-text > p {
-  margin-top: 20px;
-  font-weight: bold;
+.paragraph-1 .author-info a {
+  color: #333;
 }
 
 .paragraph-1 .subscribe-text > a {
@@ -265,20 +409,16 @@ button:hover {
   width: 210px;
   margin-left: 90px;
 }
+
 .editor-pick > h4 {
   padding-bottom: 10px;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 15px;
 }
+
 .editor-pick-articles article {
   display: flex;
   margin-bottom: 15px;
-}
-
-.editor-pick-articles article a {
-  margin: auto 0 auto 10px;
-  color: #333;
-  text-decoration: none;
 }
 
 .editor-pick-articles article img {
@@ -297,21 +437,10 @@ button:hover {
   width: 950px;
 }
 
-.paragraph-2-container hr {
-  width: 70px;
-  margin-bottom: 20px;
-}
-
 .paragraph-2-container .author-name {
   color: #333;
   font-size: 14px;
   margin-bottom: 15px;
-}
-
-.paragraph-2-start p {
-  font-size: 16px;
-  color: #666666;
-  line-height: 1.2;
 }
 
 .astronomy-container {
@@ -339,12 +468,6 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.astronomy-container img {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-}
-
 .astronomy-footer {
   margin: 20px 0;
 }
@@ -353,13 +476,6 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
-}
-
-.astronomy-footer hr {
-  border: none;
-  border-top: 1px rgb(44, 44, 44) solid;
-  width: 60px;
-  margin-bottom: 15px;
 }
 
 /* paragraph-3 section */
@@ -377,12 +493,6 @@ button:hover {
   width: 100%;
 }
 
-.paragraph-3 .fig-cap-vid p {
-  font-size: 15px;
-  color: #929292;
-  letter-spacing: 0.8px;
-}
-
 .paragraph-3 .fig-cap-vid p span {
   font-size: 13px;
   color: #a1a0a0;
@@ -391,12 +501,6 @@ button:hover {
 
 .paragraph-3 .fig-cap-img {
   width: 100%;
-}
-
-.paragraph-3 .fig-cap-img p {
-  font-size: 15px;
-  color: #4e4e4e;
-  letter-spacing: 0.9px;
 }
 
 .paragraph-3 .fig-cap-img p span {
@@ -408,22 +512,8 @@ button:hover {
   flex: 1;
 }
 
-.vid-article-footer-start p {
-  font-size: 12px;
-  color: #666666;
-  margin: 0;
-  letter-spacing: 0.5px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .vid-article-footer-start ul {
   margin: 0;
-}
-
-.vid-article-footer-start ul li a {
-  font-size: 12px;
-  color: #666666;
-  padding: 0 5px;
 }
 
 .video-article-section-footer .social-links {
@@ -432,7 +522,7 @@ button:hover {
 }
 
 .video-article-section-footer .social-links ul * {
-  background-color: #eeeeee;
+  background-color: #eee;
   width: 27px;
   height: 27px;
   display: flex;
@@ -462,9 +552,7 @@ button:hover {
   margin-left: 10px;
 }
 
-/* ********************************************************************************* */
 /* ***************************--SUGGESTION-SECTION--********************************** */
-/* ********************************************************************************* */
 
 .suggestion-section-container {
   max-width: 1280px;
@@ -476,7 +564,6 @@ button:hover {
   padding: 16px 0;
   border-top: black 1px solid;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0px;
   font-size: 16px;
 }
 
@@ -485,22 +572,9 @@ button:hover {
   display: inline-block;
 }
 
-.suggestion-section-left img {
-  width: 100%;
-}
-
 .suggestion-section-right {
   width: 315px;
   float: right;
-}
-
-.most-popular a {
-  padding: 16px 0;
-  border-top: #e0e0e0 1px solid;
-  text-decoration: none;
-  color: #121212;
-  font-size: 19px;
-  line-height: 25px;
 }
 
 .space-section,
@@ -523,18 +597,6 @@ button:hover {
   margin: 3px;
 }
 
-.suggestion-grid a {
-  text-decoration: none;
-  color: #121212;
-  font-size: 18px;
-}
-
-.suggestion-grid p {
-  font-size: 12px;
-  color: #999;
-  margin-top: 3px;
-}
-
 /************** links ****************/
 
 .links {
@@ -543,26 +605,10 @@ button:hover {
   padding: 40px;
 }
 
-.links-start img {
-  width: 184px;
-}
-
-.links-start hr {
-  border-top: #e2e2e2 2px solid;
-  margin-bottom: 1px;
-}
-
 .links-start div {
   border-top: 1px #e2e2e2 solid;
   justify-content: space-between;
   margin-top: 3px;
-}
-
-.links-start a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #567b95;
 }
 
 .links-mid {
@@ -574,22 +620,6 @@ button:hover {
 
 .links-mid > div {
   flex: 1;
-}
-
-.links-mid li {
-  line-height: 25px;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.links-mid li:first-child {
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.links-mid li a {
-  text-decoration: none;
-  color: #000;
 }
 
 .links-mid .li-bold {
@@ -637,40 +667,10 @@ footer {
   position: fixed;
   border-top: 1px solid black;
   background-color: #fff;
-  z-index: 1000px;
 }
 
 .footer-container {
   width: 1320px;
   margin: 0 auto;
   padding: 20px 0;
-}
-
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  flex: 2;
-  font-size: 15px;
-  color: #000;
-  text-align: end;
-}
-
-footer div {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer button {
-  border: none;
-  font-weight: bold;
-  background-color: #fff;
-}
-
-footer svg {
-  transform: rotate(-90deg);
-  margin-left: 30px;
 }
