@@ -25,7 +25,7 @@ ul {
 body {
   background-color: #fff;
   font-size: 14px;
-  font-family: font86463;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.4;
   color: #000;
 }
@@ -50,7 +50,7 @@ p {
   letter-spacing: 1.5px;
 }
 
-p>a {
+p > a {
   color: #326891;
 }
 
@@ -60,12 +60,21 @@ h2 {
   margin: 15px 0;
 }
 
-img {
-  min-width: 200px;
+.flex {
+  display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
 
+.flex-align {
+  align-items: center;
+}
 
+.flex-center {
+  justify-content: center;
+}
 
 /* header section */
 
@@ -81,8 +90,6 @@ header {
 }
 
 header ul {
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
   margin: 0 20px;
   width: 210px;
@@ -134,10 +141,6 @@ button:hover {
 
 .main-section {
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0 90px;
 }
 
@@ -160,7 +163,7 @@ button:hover {
 }
 
 /******************************* paragraph-1-section ************************* */
-.paragraph-1>.paragraph-1-container>div>p {
+.paragraph-1 > .paragraph-1-container > div > p {
   width: 600px;
   margin: 0 auto;
   color: black;
@@ -171,19 +174,11 @@ button:hover {
   letter-spacing: 1.5px;
 }
 
-.paragraph-1-container {
-  display: flex;
-  align-items: center;
-}
-
 .paragraph-1 {
-  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
-.paragraph-1>div {
+.paragraph-1 > div {
   width: 600px;
   justify-self: center;
   align-self: center;
@@ -207,21 +202,15 @@ button:hover {
 
 .paragraph-1 .paragraph-1-social {
   margin: 15px 0 25px 0;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.paragraph-1-social>div {
+.paragraph-1-social > div {
   display: flex;
 }
 
 .paragraph-1-social p {
   margin: 0;
-}
-
-.paragraph-1 .paragraph-1-social ul {
-  display: flex;
 }
 
 .paragraph-1 .paragraph-1-social .social-icons li {
@@ -243,26 +232,23 @@ button:hover {
 }
 
 .paragraph-1 .subscribe-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: none;
   font-size: 15px;
   margin: 25px 0;
 }
 
-.paragraph-1 .subscribe-text>hr {
+.paragraph-1 .subscribe-text > hr {
   width: 70px;
   border: none;
   border-top: 1px solid #d4d4d4;
 }
 
-.paragraph-1 .subscribe-text>p {
+.paragraph-1 .subscribe-text > p {
   margin-top: 20px;
   font-weight: bold;
 }
 
-.paragraph-1 .subscribe-text>a {
+.paragraph-1 .subscribe-text > a {
   color: #326891;
   margin-bottom: 20px;
   font-weight: bold;
@@ -276,26 +262,21 @@ button:hover {
 /* editor-pick */
 
 .editor-pick {
-  display: flex;
-  flex-direction: column;
-  margin-left: 60px;
+  width: 210px;
+  margin-left: 90px;
 }
-
-.editor-pick h4 {
+.editor-pick > h4 {
   padding-bottom: 10px;
   border-bottom: 1px solid #d4d4d4;
   margin-bottom: 15px;
 }
-
 .editor-pick-articles article {
   display: flex;
-  align-items: center;
-  width: 210px;
   margin-bottom: 15px;
 }
 
 .editor-pick-articles article a {
-  margin-left: 15px;
+  margin: auto 0 auto 10px;
   color: #333;
   text-decoration: none;
 }
@@ -309,23 +290,19 @@ button:hover {
 
 .paragraph-2 {
   width: 100%;
-  display: flex;
-  justify-content: center;
   margin: 15px 0;
 }
 
 .paragraph-2-container {
-  display: flex;
-  flex-direction: column;
   width: 950px;
 }
 
-.paragraph-2-container hr{
+.paragraph-2-container hr {
   width: 70px;
   margin-bottom: 20px;
 }
 
-.paragraph-2-container .author-name{
+.paragraph-2-container .author-name {
   color: #333;
   font-size: 14px;
   margin-bottom: 15px;
@@ -340,11 +317,9 @@ button:hover {
 .astronomy-container {
   position: relative;
   padding-bottom: 50px;
-
 }
 
 .astronomy-container .image-articles-container {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -390,10 +365,6 @@ button:hover {
 /* paragraph-3 section */
 
 .paragraph-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 600px;
   margin: 0 auto;
 }
@@ -433,11 +404,6 @@ button:hover {
   font-size: 13px;
 }
 
-.video-article-section-footer {
-  display: flex;
-  flex-direction: column;
-}
-
 .vid-article-footer-start {
   flex: 1;
 }
@@ -451,7 +417,6 @@ button:hover {
 }
 
 .vid-article-footer-start ul {
-  display: flex;
   margin: 0;
 }
 
@@ -462,14 +427,8 @@ button:hover {
 }
 
 .video-article-section-footer .social-links {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 20px 0;
-}
-
-.video-article-section-footer .social-links ul {
-  display: flex;
 }
 
 .video-article-section-footer .social-links ul * {
@@ -491,9 +450,6 @@ button:hover {
   width: 328px;
   height: 24px;
   padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -536,15 +492,6 @@ button:hover {
 .suggestion-section-right {
   width: 315px;
   float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.most-popular {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .most-popular a {
@@ -591,8 +538,6 @@ button:hover {
 /************** links ****************/
 
 .links {
-  display: flex;
-  flex-direction: column;
   max-width: 1280px;
   margin: 20px auto 50px;
   padding: 40px;
@@ -609,8 +554,6 @@ button:hover {
 
 .links-start div {
   border-top: 1px #e2e2e2 solid;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 3px;
 }
@@ -623,14 +566,13 @@ button:hover {
 }
 
 .links-mid {
-  display: flex;
   justify-content: space-between;
   margin: 20px 0;
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 10px;
 }
 
-.links-mid>div {
+.links-mid > div {
   flex: 1;
 }
 
@@ -671,7 +613,6 @@ button:hover {
 }
 
 .links .links-end ul {
-  display: flex;
   justify-content: space-between;
   padding: 10px 80px;
 }
@@ -703,12 +644,9 @@ footer {
   width: 1320px;
   margin: 0 auto;
   padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-footer p{
+footer p {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -718,21 +656,21 @@ footer p{
   text-align: end;
 }
 
-footer div{
-  flex:1;
+footer div {
+  flex: 1;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-footer button{
+footer button {
   border: none;
   font-weight: bold;
   background-color: #fff;
 }
 
-footer svg{
+footer svg {
   transform: rotate(-90deg);
   margin-left: 30px;
 }
