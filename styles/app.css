@@ -16,14 +16,13 @@ ul {
   padding: 0 90px;
 }
 
-.nav-container{
+.nav-container {
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 /******************************* global ************************* */
 
@@ -45,7 +44,14 @@ figure figcaption span {
   color: #888;
   font-size: 13px;
 }
-
+p {
+  color: black;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
 p > a {
   color: #326891;
 }
@@ -78,12 +84,11 @@ header ul {
   width: 210px;
 }
 
-header .left-nav{
+header .left-nav {
   justify-content: flex-start;
 }
 
-
-header img{
+header img {
   width: 200px;
   height: 40px;
 }
@@ -106,7 +111,7 @@ header img{
   font-size: 12px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: #466880;
 }
@@ -333,7 +338,7 @@ button:hover{
 }
 .astronomy-container img {
   width: 100%;
-  z-index: -30;
+  z-index: -1;
   position: absolute;
 }
 .astronomy-footer {
@@ -359,36 +364,86 @@ button:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.paragraph-3 p {
   width: 600px;
   margin: 0 auto;
-  color: black;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
 }
+
 .paragraph-3 figure {
-  width: 600px;
   margin: 20px 0;
 }
 .paragraph-3 figure img {
   width: 100%;
 }
-.paragraph-3 figcaption {
-  width: 100%;
-  font-size: 16px;
-  color: #636363;
-}
-.paragraph-3 figcaption p {
+
+.paragraph-3 .fig-cap-vid p {
   font-size: 15px;
   color: #929292;
   letter-spacing: 0.8px;
 }
-.paragraph-3 figcaption p span {
+.paragraph-3 .fig-cap-vid p span {
   font-size: 13px;
   color: #a1a0a0;
   letter-spacing: 0.8px;
+}
+.paragraph-3 .fig-cap-img {
+  width: 100%;
+}
+.paragraph-3 .fig-cap-img p {
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 0.9px;
+}
+.paragraph-3 .fig-cap-img p span {
+  color: #929292;
+  font-size: 13px;
+}
+
+.video-article-section-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.vid-article-footer-start {
+  flex: 1;
+}
+
+.vid-article-footer-start p {
+  font-size: 12px;
+  color: #666666;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vid-article-footer-start ul {
+  display: flex;
+  margin: 0;
+}
+
+.vid-article-footer-start ul li a {
+  font-size: 12px;
+  color: #666666;
+  padding: 0 5px;
+}
+
+.video-article-section-footer .social-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.video-article-section-footer .social-links ul {
+  display: flex;
+}
+.video-article-section-footer .social-links button {
+  width: 328px;
+  height: 24px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  background-color: #326891;
 }
