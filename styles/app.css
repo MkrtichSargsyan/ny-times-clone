@@ -495,18 +495,24 @@ button:hover {
 .suggestion-section-container {
   max-width: 1280px;
   margin: 20px auto;
-  border: 1px solid red;
   padding: 40px;
+}
+
+.suggestion-section h4 {
+  padding: 16px 0;
+  border-top: black 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  font-size: 16px;
 }
 
 .suggestion-section-left {
   width: 850px;
-  background-color: black;
-  /* float: left; */
   display: inline-block;
 }
+
 .suggestion-section-left img {
-  width: 275px;
+  width: 100%;
 }
 
 .suggestion-section-right {
@@ -521,13 +527,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
 }
-.suggestion-section-right h4 {
-  padding: 16px 0;
-  border-top: black 1px solid;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0px;
-  font-size: 16px;
-}
+
 .most-popular a {
   padding: 16px 0;
   border-top: #e0e0e0 1px solid;
@@ -536,3 +536,37 @@ button:hover {
   font-size: 19px;
   line-height: 25px;
 }
+
+.space-section,
+.editor-picks{
+  display: grid;
+  grid-template-columns: 270px 270px 270px; 
+  gap: 17px;
+}
+
+.suggestion-grid article{
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion-grid figure figcaption{
+  width: 100%;
+  text-align: end;
+  color: #999;
+  font-size: 10px;
+  margin: 3px;
+}
+
+.suggestion-grid a{
+  text-decoration: none;
+  color: #121212;
+  font-size: 18px;
+}
+
+
+.suggestion-grid p{
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+
