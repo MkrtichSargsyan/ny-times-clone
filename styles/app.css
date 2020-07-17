@@ -11,7 +11,7 @@
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 /******************************* --GLOBAL-- ************************ */
@@ -27,7 +27,7 @@ ul {
 body {
   background-color: #fff;
   font-size: 14px;
-  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
   line-height: 1.4;
   color: #000;
 }
@@ -255,12 +255,6 @@ footer p {
 .paragraph-1 .paragraph-1-container > div > p {
   width: 600px;
   margin: 0 auto;
-  color: black;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
 }
 
 .paragraph-1 {
