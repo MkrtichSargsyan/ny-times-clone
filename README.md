@@ -10,8 +10,7 @@
 - Css3
 
 ## Live Demo
-
-https://rawcdn.githack.com/MkrtichSargsyan/microverse-ny-times-clone/ccb33f62add2d031236ad33d5d116cfc7a5798bf/index.html
+[Live Demo Link](https://rawcdn.githack.com/MkrtichSargsyan/microverse-ny-times-clone/ccb33f62add2d031236ad33d5d116cfc7a5798bf/index.html) 
 
 ## Authors
 
