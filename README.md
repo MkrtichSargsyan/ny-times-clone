@@ -36,6 +36,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone hose code was used
 - Inspiration
 - etc
